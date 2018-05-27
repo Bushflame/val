@@ -1,0 +1,15 @@
+@import 'normalize.css';
+@import 'main/mixins';
+@import 'main/variables';
+@import 'main/global';
+@import 'modules/navBar';
+@import 'modules/top';
+@import 'modules/reveal-items';
+@import 'modules/sections';
+@import 'modules/duos';
+@import 'modules/trios';
+@import 'modules/quads';
+@import 'modules/sided';
+@import 'modules/footer';
+
+

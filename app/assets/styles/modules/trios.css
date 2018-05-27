@@ -1,0 +1,48 @@
+.trios {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:1rem 0;
+    max-width:1280px;
+    margin:auto;
+    
+}
+
+.trio {
+    background:#fff;
+    margin-top:100px;
+    padding:1rem;
+    width:100%;
+    
+    &__img {
+        border:.4rem solid #fff;
+        border-radius:50%;
+        display:block;
+        margin: auto;
+        height:200px;
+        width:200px;
+        margin-top:-100px;
+    }
+    
+    &__heading {
+        color:$orange7;
+        font-size:2rem;
+        margin-bottom:0;
+        text-align:center;
+    }
+    
+    &__subheading {
+        color:$blueGrey8;
+        font-size:1.4rem;
+        margin-top:0;
+        text-align:center;
+    }
+    
+    @mixin at700 {
+        width:48%;
+    }
+    
+    @mixin at940 {
+        width: 30%;
+    }
+}

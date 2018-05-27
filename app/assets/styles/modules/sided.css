@@ -1,0 +1,60 @@
+.sided {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1280px;
+    margin:auto;
+    &__main {
+        background:$blueGrey3;
+        width:100%;
+    }
+    &__main-title{
+        color:$orange7;
+        font-size:2rem;
+        margin-bottom:0;
+        text-align:center;
+    }
+    
+    &__aside {
+        display:flex;
+        flex-wrap:wrap;
+        margin:0;
+        background:$orange1;
+        padding:1rem 0;
+        width:100%;
+    }
+    
+    &__aside-segment {
+        width:100%;
+        padding:0;
+        margin:0;
+        
+    }
+    
+        &__aside-segment-heading {
+        color:$orange7;
+        font-size:2rem;
+        margin-bottom:0;
+        text-align:center;
+    }
+    &__aside-img {
+        display:block;
+        width:100%;
+    }
+    &__aside-segment{
+        background:green;
+    }
+    
+
+    
+    
+    @mixin at1020 {
+        &__main {
+            width:70%;
+        }
+        
+        &__aside {
+            width:30%;
+        }
+    }
+    
+}
