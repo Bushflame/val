@@ -1,0 +1,37 @@
+.octets {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.octet {
+    width:25%;
+
+    &__text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        padding:0 1rem;
+    }
+    &__text-top {
+        font-weight:bold;
+        margin:0;
+    }
+    &__hr {
+    width:50%;
+    margin: 1rem auto;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.75), rgba(100, 100, 100, 0));
+    }    
+    &__text-bottom {
+    margin:0        
+    }
+
+    
+    &__img {
+        display:block;
+    }
+}
