@@ -15,7 +15,7 @@
 }
 
 .navWrap {
-    background:transparent;
+
 	position:fixed;	
 	transition:all 0.5s ease-in;
 	width:100%;
@@ -31,7 +31,7 @@
             color:#fff;            
         } 
         &--dark {
-            background:$blueGrey2;  
+            background:#FFF;  
             a {
                 color:$blueGrey8;            
             }   

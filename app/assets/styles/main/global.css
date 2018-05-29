@@ -2,9 +2,17 @@
 *{
     box-sizing: border-box;
 }
+html {
+    height:100%;
+}
 body {
-font-family: 'Roboto', sans-serif;
-color:#333;
+    background-image: url('../../assets/img/desktop-1280.jpg');
+    background-size:cover;
+    background-repeat: no-repeat; 
+background-attachment: fixed;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    color:#333;
 }
 p {
     font-size:1.1rem;
