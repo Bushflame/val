@@ -782,50 +782,59 @@ background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26
     background:#fff;
 }
 
-/*
-A two column flexbox with H3 sub titles
-the parent is an article and children are divs
-*/
-
-.duos {
+.services {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+    max-width:1280px;
     -webkit-box-pack:justify;
         -ms-flex-pack:justify;
             justify-content:space-between;
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
-    margin:auto;
-    max-width:1280px;
-}
-
-.duo {
-    padding:1rem;
-    width:100%;
+    margin:0 auto;
     
 }
 
-@media (min-width: 700px) {
+.service {
+     border:.05rem solid #CFD8DC;
+     padding:1rem;
+}
 
-.duo {
-    width:50%
-    
+.service__icon {
+         color:#607D8B;
+         font-size:4rem;
+         margin:0;
+     }
+
+.service__title{
+         color:#607D8B;         
+         font-size:1.6rem;
+         margin:0;
+     }
+
+.service__biline {
+         margin:0;
+     }
+
+.service__body {
+         color:rgb(120,120,120);
+         margin:0;
+     }
+
+@media (min-width: 620px) {
+
+.service {
+       width:45%
 }
     }
 
-.duo__heading {
-        color:#607D8B;
-        font-size:2rem;
+@media (min-width: 940px) {
+
+.service {
+         width:24%
+}
     }
-
-.duo:first-child{
-    background:#FFE0B2;
-}
-
-.duo:last-child {
-    background:#FFCC80;
-}
 
 .trios {
     display:-webkit-box;
