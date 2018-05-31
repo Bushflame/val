@@ -1,4 +1,9 @@
-
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Nova Script', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Kaushan Script', cursive;
+*/
 *{
     box-sizing: border-box;
 }
@@ -22,4 +27,7 @@ p {
 img {
     max-width:100%;
     height:auto;
+}
+button:focus {
+    outline:0;
 }

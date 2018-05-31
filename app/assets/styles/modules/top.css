@@ -12,6 +12,7 @@
         
     }
     &__header-title {
+        font-family: 'Raleway', sans-serif;           
         color:$orange6;
         font-size:2rem;
         font-weight:300;
@@ -25,17 +26,28 @@
         
     }
     &__header-tagline {
-        color:$blueGrey6;
+        font-family: 'Bad Script', cursive;
+        color:#fff;
         font-size:1.4rem;
         margin:0;        
         @mixin at700 {
             font-size:2.2rem;
         }
+
         
         @mixin at1020 {
             font-size:3rem;
         }        
     }
+    
+    &__header-btn {
+        color:#fff;
+        background:transparent;
+        border:0.05rem solid #fff;
+        border-radius:2rem;
+        padding:1rem;
+    }
+    
     &__description {
         color:#fff;
         font-size:1.1rem;

@@ -1,3 +1,4 @@
+
 .section {
     padding:2rem 1rem 2rem;
             @mixin at1020 {
@@ -6,15 +7,25 @@
         }
     
     &__title {
+        color:$blueGrey7;
+        font-family: 'Raleway', sans-serif;        
         text-align:center;
         margin-bottom:0;
         @mixin at700 {
             font-size:3rem;
         }
     }
+        &__title:after {
+  border-bottom: 2px solid $blueGrey7;
+  content: '';
+  display: block;
+  width: 8rem;
+  margin:0 auto;
+} 
     &__tagline {
+        font-family: 'Bad Script', cursive;
         text-align:center;
-        font-size:1.4rem;
+        font-size:1.7rem;
         margin-top:0;
     }
 }
