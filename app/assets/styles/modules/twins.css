@@ -1,0 +1,46 @@
+.twins{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:1280px;
+    margin:0 auto;
+    
+}
+.twin:nth-child(1){
+    order:2;
+}
+.twin:nth-child(2){
+    order:1;
+}
+@mixin at780 {
+    .twin:nth-child(1){
+        order:1;
+    }
+    .twin:nth-child(2){
+        order:2;
+    }
+}
+.twin {
+    width:100%;
+    @mixin at780 {
+
+    width:50%;        
+    }
+
+    
+    &__title {
+        font-family: 'Raleway', sans-serif;        
+        font-size:2rem;
+        font-weight:200;
+        text-align:right;
+    }
+    &__span {
+        color:green;
+        font-weight:bold;
+    }
+    
+    &__img {
+        display:block;
+        margin:0 auto;
+    }
+}

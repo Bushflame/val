@@ -1,0 +1,14 @@
+.monos {
+    max-width:860px;
+    margin:0 auto;
+}
+.mono {
+    &__img{
+        width:100%;
+    }
+    &__heading {
+        color:$blueGrey8;
+        font-size:2rem;
+        font-weight:400;
+    }
+}

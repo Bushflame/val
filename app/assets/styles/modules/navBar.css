@@ -104,7 +104,7 @@
 		font-size:1.1rem;
 		text-decoration:none;		
 			&.is-current-link {
-			border-bottom:$blueGrey7 solid .3rem;
+			border-bottom:$orange8 solid .3rem;
 		}
     }
   

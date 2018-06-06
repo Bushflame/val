@@ -11,7 +11,7 @@ html {
     height:100%;
 }
 body {
-    background-image: url('../../assets/img/desktop-1280.jpg');
+    background-image: url('../../assets/img/nature.jpg');
     background-size:cover;
     background-repeat: no-repeat; 
 background-attachment: fixed;
@@ -25,6 +25,7 @@ p {
 }
 
 img {
+    display:block;
     max-width:100%;
     height:auto;
 }

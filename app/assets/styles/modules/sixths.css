@@ -1,0 +1,31 @@
+.sixths {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1280px;
+    margin:0 auto;
+}
+.sixth {
+    background:#fff;
+    border:.6rem solid rgb(250,250,250);
+    color:$blueGrey7;
+    box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22);
+    text-align:center;
+    margin:0 auto 2rem;
+    padding:1rem; 
+    width:100%;
+    
+    @mixin at540 {
+        width:80%;
+    }
+    @mixin at700 {
+        width:45%;
+    }
+    @mixin at940 {
+        width:30%;
+    }
+    &__title {
+        font-size:2rem;
+        font-weight:300;
+    }
+    
+}

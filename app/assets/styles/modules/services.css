@@ -7,12 +7,14 @@
     
 }
 .service {
-     border:.05rem solid $blueGrey2;
      padding:1rem;
      &__icon {
+         border:.03rem solid;
+         border-radius:50%;
          color:$blueGrey6;
-         font-size:4rem;
+         font-size:3rem;
          margin:0;
+         padding:.5rem;
      }
      
      &__title{

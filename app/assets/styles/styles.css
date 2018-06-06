@@ -4,14 +4,24 @@
 @import 'main/global';
 @import 'modules/navBar';
 @import 'modules/top';
+
 @import 'modules/reveal-items';
 @import 'modules/sections';
 @import 'modules/services';
+@import 'modules/twins';
 @import 'modules/trios';
+@import 'modules/threes';
 @import 'modules/quads';
 @import 'modules/cards';
 @import 'modules/sixes';
+@import 'modules/sixths';
 @import 'modules/octets';
+@import 'modules/pairs';
+@import "modules/twos";
+@import 'modules/monos';
+@import 'modules/accordion';
+@import 'modules/contact';
+@import 'modules/contact-2';
 @import 'modules/footer';
 
 

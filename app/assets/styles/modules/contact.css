@@ -1,0 +1,88 @@
+.contact {
+    max-width:1280px;
+    margin: 0 auto;
+}
+
+.details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:100%;
+}
+
+.detail{
+    background:#fff;        
+    box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22);
+    text-align:center;
+    margin:0 auto 2rem;
+    padding:1rem; 
+    width:100%;
+    &__img {
+        width:100%;
+    }
+    @mixin at620 {
+        width:46%;
+    }
+    
+    @mixin at860 {
+        margin:0;
+    width:30%;        
+    }
+
+    
+    &__icon{
+        color:$blueGrey4;
+        font-size:48px;
+        margin:0;
+    }
+    &__body{
+        color:rgb(99,99,99);
+        margin:0;
+    }
+    
+}
+.antispam{
+    display:none;
+}
+
+.webform{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    font-size:1rem;
+    color:#555;
+    background:#fff;
+    padding:2rem;
+    margin-top:3rem;
+    box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22); 
+    &__input{
+        width:100%;
+         margin-bottom:2rem        
+    }
+    @mixin at780 {
+         &__input{
+            padding:.6rem;
+            width:48%;
+;   
+            }
+        }
+
+&__textarea{
+    padding:.6rem;
+    width:100%;
+    }
+    
+
+     &__submit {
+         background:#fff;
+         outline:none;
+         color:$blueGrey4;
+         font-size:1.2rem;
+         margin-top:2rem;
+         padding:1rem;
+         border:1px solid;
+    }
+}
+.webform__submit:focus, textarea:focus, input:focus{
+    outline: none;
+}
