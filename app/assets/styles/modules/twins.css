@@ -6,24 +6,10 @@
     margin:0 auto;
     
 }
-.twin:nth-child(1){
-    order:2;
-}
-.twin:nth-child(2){
-    order:1;
-}
-@mixin at780 {
-    .twin:nth-child(1){
-        order:1;
-    }
-    .twin:nth-child(2){
-        order:2;
-    }
-}
+
 .twin {
     width:100%;
     @mixin at780 {
-
     width:50%;        
     }
 
@@ -32,15 +18,16 @@
         font-family: 'Raleway', sans-serif;        
         font-size:2rem;
         font-weight:200;
-        text-align:right;
+        text-align:left;
     }
     &__span {
-        color:green;
+        color:$blueGrey7;
         font-weight:bold;
     }
     
     &__img {
         display:block;
+        max-width:20rem;
         margin:0 auto;
     }
 }

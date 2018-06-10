@@ -16,18 +16,41 @@
             font-size:3rem;
         }
     }
-        &__title:after {
-  border-bottom: 2px solid $blueGrey7;
-  content: '';
-  display: block;
-  width: 8rem;
-  margin:0 auto;
-} 
+/*        &__title:after {*/
+/*  border-bottom: 2px solid $blueGrey7;*/
+/*  content: '';*/
+/*  display: block;*/
+/*  width: 8rem;*/
+/*  margin:0 auto;*/
+/*} */
     &__tagline {
         font-family: 'Bad Script', cursive;
         text-align:center;
         font-size:1.7rem;
         margin-top:0;
+    }
+    &__description {
+        font-family:'Times New Roman';
+        max-width:600px;
+        margin:2rem auto 4rem;
+        text-align:center;
+    }
+
+    &__hr {
+    max-width:18rem;
+    margin: 1rem auto;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(7, 101, 133, 0), rgba(7, 101, 133, 0.75), rgba(7, 101, 133, 0));
+    } 
+    
+    &__logo {
+        height:1.4rem;
+       transform:rotate(-10deg);
+        opacity:.5;        
+        @mixin at700 {
+            height:2rem;            
+        }
     }
 }
 .section-break {
@@ -50,23 +73,29 @@
          font-family: 'Bad Script', cursive;
         margin:0;
     }
+
 }
+.section-home {
+    padding:0;
+
+}
+
+
 .section-home {
     padding:0;
 }
 .section-top {
     width:100%;
-    height:100%;
+    /*min-height:60%;*/
     padding-bottom:0;
-    background: transparent; 
     display:flex;
     align-items:flex-end;
-
-border-bottom:.4rem solid $orange8;
-    @mixin at780{
-        flex-align:center;
-    }
 }
+
+
+
+
+
 .section-top-2 {
     background: #E6DADA;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
@@ -74,7 +103,7 @@ background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, F
 
 }
 .section-1 {
-    background:#fff;
+    background:#FFF;
     
 }
 
@@ -85,6 +114,16 @@ background:rgb(250,250,250);
 .section-2a {
     background:#fff;
 }
+.section-3 {
+    background:transparent;
+    &__header{
+        background:rgba(255,255,255,0.7);
+        max-width:780px;
+        margin:0 auto;
+        padding-top:2rem;
+    }
+
+}
 .section-4 {
 background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
     
@@ -93,7 +132,7 @@ background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26
     background:transparent;
 }
 .section-5a {
-     background:rgb(250,250,250);
+     background:rgb(245,245,245);
 }
 
 .section-6 {

@@ -1,31 +1,44 @@
 .logoWrap {
+	font-size: 1.4rem;
+    font-weight:bold;
+    color:#fff;
 	float:left;
 	position:fixed;
 	left:1rem;
 	top:.6rem;
 	padding:0rem;
 	z-index:9;
-		&__logo {
-			height:2rem;
-			display:none;
-			@mixin at700 {
-				display:block;
-			}
-		}
+	@mixin at700 {
+		font-size:1.8rem;
+	}
+	@mixin at1020 {
+    color:$blueGrey8;		
+	}
+}
+/* a dummy div to give color to mobile background */
+.backing {
+	background:$special;
+	height:3rem;
+	width:100%;
+	position:fixed;
+	
+	@mixin at1020 {
+		display:none;
+	}
+
 }
 
 .navWrap {
-
 	position:fixed;	
 	transition:all 0.5s ease-in;
 	width:100%;
 	max-width:100%;	
     z-index:10;
+    &__logo {
+    	height:1.8rem;
+    }
 
-	
-
-	
-	@mixin at780 {		
+	@mixin at780 {
         display:block;
         a {
             color:#fff;            
@@ -36,7 +49,6 @@
                 color:$blueGrey8;            
             }   
         }
-       
 	}
 			&__menuIcon {			
                 border-radius:.2rem;        
@@ -69,13 +81,17 @@
 	padding-bottom:.5rem;
 	}	
 		&--visible {
-        background:$blueGrey3;
+        background:$special;
+        color:#fff;
         display:block;
 		text-align:right;
 		float:right;
 		margin:0;
 		padding-top:2rem;
 		width:100%;
+		a {
+			color:#fff;
+		}
 	}
 
 	&__ul {
@@ -104,7 +120,7 @@
 		font-size:1.1rem;
 		text-decoration:none;		
 			&.is-current-link {
-			border-bottom:$orange8 solid .3rem;
+			border-bottom:$blueGrey6 solid .3rem;
 		}
     }
   
@@ -113,3 +129,4 @@
     max-width:1280px;
     margin:0 auto;
 }
+

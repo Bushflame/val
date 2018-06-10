@@ -4,12 +4,28 @@
     justify-content:space-around;
     padding:1rem 0;
     max-width:1280px;
-    margin:auto;
+    margin:0 auto;
+    
+    &__voids-body {
+        padding:1rem;
+    }
+    
+    &__voids-heading {
+        color:$blueGrey7;
+        font-family:'Times New Roman';
+        font-weight:400;
+        font-size:1.3rem;
+        margin:0;
+    }
+    &__voids-p {
+        margin-top:0;
+        margin-left:1.5rem;
+    }
     
 }
 
 .trio {
-    background:#fff;
+    background:rgba(255,255,255,0.7);
     margin-top:100px;
     padding:1rem;
     width:100%;
@@ -25,14 +41,16 @@
     }
     
     &__heading {
-        color:$orange7;
+        color:$blueGrey9;
+        font-family:'times New Roman';
         font-size:2rem;
         margin-bottom:0;
         text-align:center;
     }
     
     &__subheading {
-        color:$blueGrey8;
+        color:$blueGrey7;
+        font-family: 'Bad Script', cursive;
         font-size:1.4rem;
         margin-top:0;
         text-align:center;

@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="temp/styles/styles.css" type="text/css" />    
 </head>
 <body>
-    <section class="section section-home scrollReveal" id='home'  data-matching-link='#home-link'> </section>  
+    <section class="section section-home scrollReveal" id='home'  data-matching-link='#home-link'> </section> 
+    <div class="backing">      </div>    
 	<header role='presentation' class='navWrap'>
+	    
     <div class="navWrap__liner">
       <div class="logoWrap">
-          BUSHFLAME
+          <embed class='navWrap__logo' src="assets/img/logo.svg">
       </div>
 
       <div class="navWrap__menuIcon">
           <div class="navWrap__icon-bar"></div>
           <div class="navWrap__icon-bar"></div>
           <div class="navWrap__icon-bar"></div>   
-      </div>		
+      </div>
+
+      
       <nav id='nav' class='mainNav'>
           <ul class='mainNav__ul'>
               <li><a href='#home' id='home-link'>Home</a></li>
@@ -35,32 +39,48 @@
       </nav>
   </div>
 </header> 
- <!--   <section class="section-top">
+   <section class="section-top">
       <div class="top"> 
             <header class='top__header top__part'>
-                <h1 class="top__header-title">Top Header Title (site)</h1>
-                <p class="top__header-tagline">Top Header Tagline</p>
-                <p class="top__description">A short site description goes here</p>
-                <button class="top__header-btn">Message</button>
+                <h1 class="top__header-title">Building Contractor</h1>
+                <p class="top__header-tagline">Refurbishment & voids, new builds & regeneration projects</p>
+
+        <article class="contact">
+             <form id='form' class="webform" method="post" action="submit.php">
+                 
+                <input class='webform__input' name="name" placeholder='Name' required />		
+                 
+                <input class='webform__input' name="email" placeholder='email Address' required/>
+                 <textarea class='webform__textarea' name="message" placeholder='Your Message' required rows="1" cols="50"></textarea>
+                 <input class='antispam' name="url" />
+                <input class='webform__submit' type="submit" value="Send Message" />
+            </form>	
+        </article>
+                <p class="top__header-phone">Tel: 01709 889184<br/>Mobile: 07976761639<br/>email: info@vbirdconstruction.co.uk<br>43 Lancaster St, Thurnscoe, Rotherham, S63 OHL</p>        
             </header>
             <div class="top__part top__part-2">
-                <img src="assets/img/placeholder/girl2.png" alt="" class="top__part-img">
+            <source srcset='assets/img/worker-m.png' media='(min-width: 600px) class="top__part-img'/>
+            <img src="assets/img/worker-m.png" alt="" class="top__part-img">
             </div>
         </div>
-    </section>  -->   
-  <section class="top">
-        <header class='top__header'>
-            <h1 class="top__header-title">Top Header Title (site)</h1>
-            <p class="top__header-tagline">Top Header Tagline</p>
-            <p class="top__description">A short site description goes here</p>
-            <button class="top__header-btn">Message</button>
-        </header>
-    </section> 
+    </section>    
+  <!--<section class="top">-->
+  <!--      <header class='top__header'>-->
+  <!--          <embed class='top__header-img' src="assets/img/logo.svg">-->
+  <!--          <h1 class="top__header-title">Top Header Title (site)</h1>-->
+  <!--          <p class="top__header-tagline">Top Header Tagline</p>-->
+  <!--          <p class="top__description">A short site description goes here</p>-->
+  <!--          <button class="top__header-btn">Message</button>-->
+  <!--      </header>-->
+  <!--  </section> -->
     
     <section class="section section-1 scrollReveal" id='section-1' data-matching-link='#sect-1-link'>
         <header class='section-header section-1__header'>
-        <h2 class='section__title section-1__title'>Section 1 Title</h2>
-        <p class="section__tagline section-1__tagline">Section 1 tagline</p>
+        <h2 class='section__title section-1__title'><span class='section__title-logo'>
+            <embed class='section__logo' src="assets/img/logo.svg">
+        </span>Major Projects</h2>
+                        <hr class='section__hr'/>
+        <p class="section__description">From years of experience gained from smaller projects, we can now confidently apply our expertise to much larger projects</p>
     </header>
         <article class="quads">
             <div class="quad">
@@ -96,27 +116,36 @@
     
     <section class='section section-2' id='section-2'   data-matching-link='#sect-2-link'>
         <header class="section-header section-2__header">
-        <h2 class='section__title section-2__title'>Section 2 Title</h2>
-        <p class="section__tagline section-2__tagline">Section 2 tagline</p>            
+        <h2 class='section__title section-1__title'><span class='section__title-logo'>
+            <embed class='section__logo' src="assets/img/logo.svg">
+        </span>Other Services</h2>
+                        <hr class='section__hr'/>
+        <p class="section__description">We offer a variety of other services specifically suited for one off projects. Regardless of the size or complexity, all are given the same attention to detail</p>           
         </header>
         <article class="sixths">
             <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
+                <i class="material-icons sixth__icon">account_balance</i>
+                <h4 class="sixth__title">Groundworks</h4>
             </div>
-            <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
+            <div class="sixth sixth-dark">
+                <i class="material-icons sixth__icon">account_balance</i>                
+                <h4 class="sixth__title">Driveways</h4>
             </div>            
             <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
+                <i class="material-icons sixth__icon">account_balance</i>                
+                <h4 class="sixth__title">Brick & Blockwork</h4>
+            </div>            
+            <div class="sixth sixth-dark">
+                <i class="material-icons sixth__icon">account_balance</i>                   
+                <h4 class="sixth__title">Refurbishments</h4>
             </div>            
             <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
+                <i class="material-icons sixth__icon">account_balance</i>                   
+                <h4 class="sixth__title">Domestic & Commercial Newbuilds</h4>
             </div>            
-            <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
-            </div>            
-            <div class="sixth">
-                <h4 class="sixth__title">Sixth Title</h4>
+            <div class="sixth sixth-dark">
+                <i class="material-icons sixth__icon">account_balance</i>                   
+                <h4 class="sixth__title">Government Funded Energy Schemes</h4>
             </div>            
         </article>
 
@@ -131,55 +160,65 @@
     </section>  -->   
     <section class='section section-3' id='section-3'   data-matching-link='#sect3-link'>
      <header class="section-header section-3__header">
-        <h2 class='section__title section-3__title'>Section 3 Title</h2>
-        <p class="section__tagline section-3__tagline">Section 3 tagline</p>            
+        <h2 class='section__title section-3__title'>Voids Maintenance</h2>
+        <div class="trios__voids-body">
+            <h4 class="trios__voids-heading">Projects</h4>
+            <p class="trios__voids-p">Projects description</p>
+            <h4 class="trios__voids-heading">Clients</h4>
+            <p class="trios__voids-p">Enjie<br/>Westdale Services<br/>Places For People<br/>P.F. Burridge</p>            
+            <h4 class="trios__voids-heading">Projects</h4>
+            <p class="trios__voids-p">To renovate and upgrade vacant properties to a modern habitable condition in accordance with the Better Homes Scheme. Ensuring all relevent gas and electrical testing is completed before handover.</p>
+        </div>
         </header>
         <article class="trios">
             <div class="trio">
                 <img class='trio__img' alt='' src="assets/img/resin.jpg"></img>
-                <h3 class="trio__heading">Trio heading</h3>
-                <p class="trio__subheading">Trio sub heading</p>
-                <p class="trio__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h3 class="trio__heading">Drives & Pathways</h3>
+                <p class="trio__subheading">A surface for all occasions</p>
+                <p class="trio__body">Totally transform the exterior of your home with a beautiful new drive or pathway. We offer a range of materials, including resin gravel, block paving and textured concrete.</p>
             </div>
             <div class="trio">
                 <img class='trio__img' alt='' src="assets/img/refurb.jpg"></img>
-                <h3 class="trio__heading">Trio heading</h3>
-                <p class="trio__subheading">Trio sub heading</p>
-                <p class="trio__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h3 class="trio__heading">Refurbishment</h3>
+                <p class="trio__subheading">Homes for the 21st century</p>
+                <p class="trio__body">As well as adding extra rooms and converting garages, we can also revamp any room in your house to your exact requirements.</p>
             </div>
             <div class="trio">
                 <img class='trio__img' alt='' src="assets/img/loft.jpg"></img>
-                <h3 class="trio__heading">Trio heading</h3>
-                <p class="trio__subheading">Trio sub heading</p>
-                <p class="trio__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h3 class="trio__heading">Loft Conversions</h3>
+                <p class="trio__subheading">A room with a view</p>
+                <p class="trio__body">Make the best of unused space with an extra bedroom, lounge, study or play room. Depending upon size, you could even have complete living quarters, c/w bathroom, and kitchenette</p>
             </div>            
         </article>
     </section>
     
-    <section class='section section-2a' id='section-2a' data-matching-link='#sect-2a-link'>
-        <header class="section-header section-3__header">
-        <h2 class='section__title section-3__title'>Section 2a Title</h2>
-        <p class="section__tagline section-3__tagline">Section 2a tagline</p>            
+    <section class='section section-4' id='section-4' data-matching-link='#sect-4-link'>
+        <header class="section-header section-4__header">
+        <h2 class='section__title section-4__title'>Section 4 Title</h2>
+        <p class="section__tagline section-4__tagline">Section 4 tagline</p>            
         </header> 
-        <article class="threes">
-            <div class="three">
-                <img src="assets/img/placeholder/three-1.jpg" alt="" class="three__img">
-                <h4 class="three__title">Three short headline</h4>
-                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <article class="twins">
+            <div class="twin">
+                <img src="assets/img/years.png" alt="" class="twin__img">
+            </div>            
+            <div class="twin">
+                <h3 class="twin__title">Some information<br/> About The <span class='twin__span'>BUSINESS</span></h3>
+                   <p class="twin__body">
+                       VB Building Services are a family run business based in South Yorkshire and serving the Midlands and North of England.                  
+                    </p>
+                    <p class="twin__body">
+                        Orignally formed to serve the local area, our reputation for quality and reliability allowed us to quickly expand
+                    </p>
+                    <p class="twin__body">
+                        With the knowledge gained from over XXX years experience, we can provide the complete service, from planning to completion
+                    </p>  
             </div>
-            
-            <div class="three">
-                <img src="assets/img/placeholder/three-2.jpg" alt="" class="three__img">
-                <h4 class="three__title">Three short headline</h4>
-                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            
-            <div class="three">
-                <img src="assets/img/placeholder/three-3.jpg" alt="" class="three__img">
-                <h4 class="three__title">Three short headline</h4>
-                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
+
         </article>
+
+
+
+
      </section>
      
      
@@ -242,17 +281,17 @@
                     <p class="card__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div> 
                 <img src="assets/img/placeholder/card-1.jpg" alt="" class="card__img">
-                <button class="card__btn"><a href="#" class='card__link'>Read More</a></button>
+                <!--<button class="card__btn"><a href="#" class='card__link'>Read More</a></button>-->
             </div>
 
             <div class="card card-2">
-                <img src="assets/img/placeholder/card-2.jpg" alt="" class="card__img">                
+                <img src="assets/img/resin.jpg" alt="" class="card__img">                
                 <div class="card__text">
                     <h4 class="card__title">Card Title</h4>
                     <p class="card__biline">Card Biline</p>
                     <p class="card__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div> 
-                <button class="card__btn"><a href="#" class='card__link'>Read More</a></button>
+                <!--<button class="card__btn"><a href="#" class='card__link'>Read More</a></button>-->
             </div>
 
             <div class="card card-3">
@@ -262,7 +301,7 @@
                     <p class="card__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div> 
                 <img src="assets/img/placeholder/card-3.jpg" alt="" class="card__img">
-                <button class="card__btn"><a href="#" class='card__link'>Read More</a></button>
+                <!--<button class="card__btn"><a href="#" class='card__link'>Read More</a></button>-->
             </div>
 
 
@@ -308,21 +347,28 @@
             <p class="section__tagline section-5a__tagline">Section 5a tagline</p>            
         </header>  
 
-        <article class="twins">
-            <div class="twin">
-                <h3 class="twin__title">Some information<br/> About The <span class='twin__span'>BUSINESS</span></h3>
-                <p class="twin__body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                </p>
-                <p class="twin__body">
-                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+        <article class="threes">
+            <div class="three">
+                <img src="assets/img/placeholder/three-1.jpg" alt="" class="three__img">
+                <h4 class="three__title">Three short headline</h4>
+                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
-            <div class="twin">
-                <img src="assets/img/placeholder/cactus.png" alt="" class="twin__img">
+            
+            <div class="three">
+                <img src="assets/img/placeholder/three-2.jpg" alt="" class="three__img">
+                <h4 class="three__title">Three short headline</h4>
+                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            
+            <div class="three">
+                <img src="assets/img/placeholder/three-3.jpg" alt="" class="three__img">
+                <h4 class="three__title">Three short headline</h4>
+                <p class="three__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
         </article>
-        
+
+
+
     </section>
     <section class="section section-6" id='section-6' data-matching-link='#sect-6-link'>
         <header class="section-header section-6__header">
@@ -376,25 +422,32 @@
             <div class="pair">
                 <p class="pair__lead">A small introduction</p>
                 <h4 class="pair__title">Pair title</h4>
-                <p class="pair__body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,                     
+                <p class="pair__body">andard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stpecimen book. It has survived not only five centuries,                     
                 </p>
             </div>
         </article>
     </section>
     <section class="section section-7a">
         <header class="section-header section-7a__header">
-            <h2 class='section__title section-7a__title'>Section 7a Title</h2>
-            <p class="section__tagline section-7a__intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>            
+            <h2 class='section__title section-7a__title'>Accredition</h2>
+            <p class="section__tagline section-7a__intro">VB Building Services are CHAS accredited</p>            
         </header>
         <article class="twos">
             <div class="two">
-                <img src="assets/img/placeholder/app.png" alt="" class="two__img">
+                <img src="assets/img/chas.png" alt="" class="two__img">
             </div>            
             <div class="two">
-                <h4 class="two__heading">two heading</h4>
-                <p class="two__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                 <p class="two__body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it. </p>               
+                <h4 class='two__heading'>Who are CHAS?</h4>
+                <p>
+                    CHAS are an authorative accredition company that ensures its members comply with the most strignent health and safety legistation. All our members recieve expert advice on safety, efficiency and environmental apsects concerning the construction industry
+                </p>
+                <p>
+                    Many organisations insist their contractors are health and safety accredited. CHAS members are automatically approved by over 1000 organisations
+                </p>
+                <p>
+                    By continually assessing all members, CHAS provide you with the assuarance and high safety standards you're entitled to expect... <a href='https://www.chas.co.uk' target='_blank'>find out more </a>
+                </p>            
             </div>
         </article>
     </section>
@@ -515,7 +568,7 @@
                 
 
          
-                 <textarea class='webform__textarea' name="message" placeholder='Your Message' required rows="6" cols="50"></textarea>
+                 <textarea class='webform__textarea' name="message" placeholder='Your Message' required rows="4" cols="50"></textarea>
                  <input class='antispam' name="url" />
                 <input class='webform__submit' type="submit" value="Send Message" />
             </form>	

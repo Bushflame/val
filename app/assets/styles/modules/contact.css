@@ -1,5 +1,5 @@
 .contact {
-    max-width:1280px;
+    max-width:640px;
     margin: 0 auto;
 }
 
@@ -51,17 +51,16 @@
     justify-content:space-between;
     font-size:1rem;
     color:#555;
-    background:#fff;
-    padding:2rem;
-    margin-top:3rem;
-    box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22); 
+    background:transparent;
+    padding:.5rem;
+    margin-top:1rem;
     &__input{
         width:100%;
-         margin-bottom:2rem        
+         margin-bottom:.5rem        
     }
     @mixin at780 {
          &__input{
-            padding:.6rem;
+            padding:.4rem;
             width:48%;
 ;   
             }
@@ -77,9 +76,9 @@
          background:#fff;
          outline:none;
          color:$blueGrey4;
-         font-size:1.2rem;
-         margin-top:2rem;
-         padding:1rem;
+         font-size:1.1rem;
+         margin-top:.5rem;
+         padding:.4rem;
          border:1px solid;
     }
 }

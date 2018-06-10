@@ -1,91 +1,91 @@
 
-.top {
+/*.top {*/
+/*    display:flex;*/
+/*    align-items:center;*/
+/*    justify-content:center;*/
+/*    height:100%;*/
+/*    width:100%;*/
 
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:100%;
-    width:100%;
-
-    &__header {
-        text-align:center;
-        padding:1rem;
+/*    &__header {*/
+/*        text-align:center;*/
+/*        padding:1rem;*/
         
-    }
-    &__header-title {
-        font-family: 'Raleway', sans-serif;           
-        color:$orange6;
-        font-size:2rem;
-        font-weight:300;
-        margin:0;
-        @mixin at700 {
-            font-size:3rem;
-        }
-        @mixin at1020 {
-            font-size:4rem;
-        }
+/*    }*/
+/*    &__header-title {*/
+/*        font-family: 'Raleway', sans-serif;           */
+/*        color:$orange6;*/
+/*        font-size:2rem;*/
+/*        font-weight:300;*/
+/*        margin:0;*/
+/*        @mixin at700 {*/
+/*            font-size:3rem;*/
+/*        }*/
+/*        @mixin at1020 {*/
+/*            font-size:4rem;*/
+/*        }*/
         
-    }
-    &__header-tagline {
-        font-family: 'Bad Script', cursive;
-        color:#fff;
-        font-size:1.4rem;
-        margin:0;        
-        @mixin at700 {
-            font-size:2.2rem;
-        }
+/*    }*/
+/*    &__header-tagline {*/
+/*        font-family: 'Bad Script', cursive;*/
+/*        color:#fff;*/
+/*        font-size:1.4rem;*/
+/*        margin:0;        */
+/*        @mixin at700 {*/
+/*            font-size:2.2rem;*/
+/*        }*/
 
         
-        @mixin at1020 {
-            font-size:3rem;
-        }        
-    }
+/*        @mixin at1020 {*/
+/*            font-size:3rem;*/
+/*        }        */
+/*    }*/
     
-    &__header-btn {
-        color:#fff;
-        background:transparent;
-        border:0.05rem solid #fff;
-        border-radius:2rem;
-        padding:1rem;
-    }
+/*    &__header-btn {*/
+/*        color:#fff;*/
+/*        background:transparent;*/
+/*        border:0.05rem solid #fff;*/
+/*        border-radius:2rem;*/
+/*        padding:1rem;*/
+/*    }*/
     
-    &__description {
-        color:#fff;
-        font-size:1.1rem;
-        @mixin at700 {
-            font-size:1.4rem;
-        }
+/*    &__description {*/
+/*        color:#fff;*/
+/*        font-size:1.1rem;*/
+/*        @mixin at700 {*/
+/*            font-size:1.4rem;*/
+/*        }*/
         
-        @mixin at1020 {
-            font-size:1.6rem;
-        }        
-    }
-}
-.logoWrap {
-    font-size: 1.8rem;
-    font-weight:bold;
-}
+/*        @mixin at1020 {*/
+/*            font-size:1.6rem;*/
+/*        }        */
+/*    }*/
+/*}*/
+
 
 
 /*=========================================
 two part header with image
 ========================================== */
-/*
+
 .top {
     display:flex;
     flex-wrap:wrap;
-    align-items:center;
     justify-content:center;
     max-width:1280px;
-    margin:4rem auto 0;
-    padding-top 19rem
+    margin:1rem auto 0;
+    padding-top: 4rem;
+    &__part-img {
+        @mixin at780 {
+            width:80%;
+        }
+
+    }
+    
     
 
     
     @mixin at780 {
         &__part-2{
-            display:block;
             align-self:flex-end;
         }
         &__part {
@@ -101,32 +101,27 @@ two part header with image
     
     &__header-title {
         font-family: 'Raleway', sans-serif;           
-        color:$orange8;
-        font-size:2rem;
-        font-weight:300;
+        color:$blueGrey10;
+        font-size:1.6rem;
+        font-weight:bold;
         margin:0;
         
         @mixin at700 {
-            font-size:3rem;
+            font-size:1.8rem;
         }
         
         @mixin at1020 {
-            font-size:4rem;
+            font-size:2rem;
         }
         
     }
     &__header-tagline {
-        font-family: 'Bad Script', cursive;
-        color:#fff;
-        font-size:1.4rem;
+        font-family: 'Times New Roman';
+        font-weight:bold;
+        color:$blueGrey8;
+        font-size:1.2rem;
         margin:0;        
-        @mixin at700 {
-            font-size:2.2rem;
-        }
-
-        @mixin at1020 {
-            font-size:3rem;
-        }        
+      
     }
     
     &__header-btn {
@@ -138,20 +133,18 @@ two part header with image
     }
     
     &__description {
+        padding:2rem 1rem;
+        background: rgba(7, 101, 133, .5);
+        border-radius:1rem;
         color:#fff;
         font-size:1.1rem;
         @mixin at700 {
-            font-size:1.4rem;
+            font-size:1.2rem;
         }
         
         @mixin at1020 {
-            font-size:1.6rem;
+            font-size:1.3rem;
         }        
     }
 }
-*/
-.logoWrap {
-    font-size: 1.8rem;
-    font-weight:bold;
-    color:$orange8;
-}
+

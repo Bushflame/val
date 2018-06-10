@@ -1,6 +1,7 @@
 .twos {
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
     max-width:1280px;
     margin:4rem auto 0;
 }
@@ -11,7 +12,7 @@
        width:50%; 
     }
     &__heading {
-        color:#333;
+        color:$blueGrey7;
         font-size:2rem;
         font-weight:300;
         margin:0;
