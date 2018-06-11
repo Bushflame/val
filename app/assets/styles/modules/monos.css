@@ -1,14 +1,21 @@
 .monos {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
     max-width:860px;
     margin:0 auto;
 }
 .mono {
     &__img{
-        width:100%;
+        max-width:24rem;
     }
     &__heading {
         color:$blueGrey8;
         font-size:2rem;
         font-weight:400;
+    }
+    &__ul {
+        font-size:1.2rem;
     }
 }
