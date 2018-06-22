@@ -4,7 +4,8 @@
 @import 'main/global';
 @import 'modules/navBar';
 @import 'modules/top';
-
+@import 'modules/majors';
+@import 'modules/mains';
 @import 'modules/reveal-items';
 @import 'modules/sections';
 @import 'modules/services';

@@ -6,6 +6,15 @@
     margin:auto;
 }
 
+.quad-top {
+    margin:auto;
+    width:60%;
+    
+    &__img {
+        width:100%;
+    }
+}
+
 .quad {
     display:flex;
     flex-wrap:wrap;

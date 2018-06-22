@@ -1,24 +1,49 @@
 .logoWrap {
+	
 	font-size: 1.4rem;
-    font-weight:bold;
+    font-weight:normal;
     color:#fff;
 	float:left;
 	position:fixed;
-	left:1rem;
-	top:.6rem;
-	padding:0rem;
+	left:.5rem;
+	top: 0;
+	padding:.4rem;
 	z-index:9;
+	max-width:80%;	
+	&__logo{
+		display:none;
+		height:1.8rem;
+		@mixin at1020{
+			display:block;
+		}
+		
+	}
+	&__inner {
+		display:flex;
+		align-items:center;
+	}
+	
+	
+	&__contact {
+		color:#fff;
+		margin: 0 .5rem;
+		@mixin at1020 {
+			color:$special;
+		}
+
+	}
 	@mixin at700 {
 		font-size:1.8rem;
 	}
 	@mixin at1020 {
     color:$blueGrey8;		
 	}
+	
 }
 /* a dummy div to give color to mobile background */
 .backing {
 	background:$special;
-	height:3rem;
+	height:4rem;
 	width:100%;
 	position:fixed;
 	
@@ -34,9 +59,7 @@
 	width:100%;
 	max-width:100%;	
     z-index:10;
-    &__logo {
-    	height:1.8rem;
-    }
+
 
 	@mixin at780 {
         display:block;
@@ -102,17 +125,20 @@
 	&__ul {
 		float:left;
 		text-align:left;
-
+		padding-top:3rem;
 		@mixin at1020 {
-			float:right;		
+			float:right;
+			padding-top:0;			
 		}
 	}
 	&__ul >li{
 		display:block;
 		padding:.5rem .5rem;
+
 		
 		@mixin at1020 {
 		display:inline-block;
+
 		}		
 	}
 	a {
