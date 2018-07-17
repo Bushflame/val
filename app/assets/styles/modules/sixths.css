@@ -5,7 +5,7 @@
     margin:0 auto;
 }
 .sixth {
-    background:#fff;
+    background:transparent;
 
     color:$blueGrey7;
     /*box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22);*/

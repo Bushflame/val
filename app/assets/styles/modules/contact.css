@@ -1,7 +1,20 @@
-.contact {
-    max-width:640px;
-    margin: 0 auto;
+.wraps {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:100%;
+    margin:auto;
+    justify-content:space-around;
 }
+
+
+.wrap {
+
+    @mixin at860 {
+      width:45%;      
+    }
+}
+
+
 
 .details{
     display:flex;
@@ -10,35 +23,57 @@
     width:100%;
 }
 
-.detail{
-    background:#fff;        
-    box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22);
-    text-align:center;
-    margin:0 auto 2rem;
-    padding:1rem; 
-    width:100%;
-    &__img {
-        width:100%;
-    }
-    @mixin at620 {
-        width:46%;
-    }
-    
-    @mixin at860 {
-        margin:0;
-    width:30%;        
-    }
 
+.detail{
+    display:flex; 
+    flex-wrap:wrap;           
+    /*box-shadow: -1px 8px 16px 6px rgba(128,128,128,0.22);*/
+
+    width:100%;
     
-    &__icon{
+    &__icon-wrap {
+        width: 30%;
+        text-align:center;        
+    @mixin at540 {
+         width:20%;
+
+    }    
+
+    }
+    &__info-wrap {
+        width:100%;        
+      @mixin at540 {      
+        width:80%;
+        }
+    }
+    &__icon {
         color:$blueGrey4;
         font-size:48px;
-        margin:0;
-    }
-    &__body{
-        color:rgb(99,99,99);
-        margin:0;
-    }
+        margin:0 auto; 
+        text-align:center;
+    }   
+    /*}*/
+    /*&__text{*/
+    /*    width:80%;*/
+    /*}*/
+  
+    /*@mixin at620 {*/
+    /*    width:46%;*/
+    /*}*/
+    
+    /*@mixin at860 {*/
+    /*    margin:0;*/
+    /*width:30%;        */
+    /*}*/
+
+    
+    /*&__icon{*/
+
+    /*}*/
+    /*&__body{*/
+    /*    color:rgb(99,99,99);*/
+    /*    margin:0;*/
+    /*}*/
     
 }
 .antispam{
@@ -56,7 +91,9 @@
     margin-top:1rem;
     &__input{
         width:100%;
-         margin-bottom:.5rem        
+         margin-bottom:.5rem;  
+        outline:none;
+        border:0;
     }
     @mixin at780 {
          &__input{
@@ -69,6 +106,8 @@
 &__textarea{
     padding:.6rem;
     width:100%;
+    outline:none;
+    border:0;
     }
     
 
@@ -84,4 +123,5 @@
 }
 .webform__submit:focus, textarea:focus, input:focus{
     outline: none;
+
 }
